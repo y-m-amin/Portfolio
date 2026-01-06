@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DevPortfolio - Modern Web Developer</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2b6cee',
+              'background-light': '#f6f6f8',
+              'background-dark': '#111318',
+              'surface-dark': '#1c1f27',
+              'border-dark': '#282e39',
+              'border-light': '#3b4354',
+            },
+            fontFamily: {
+              display: ['Inter', 'sans-serif'],
+            },
+            borderRadius: {
+              DEFAULT: '0.25rem',
+              lg: '0.5rem',
+              xl: '0.75rem',
+              '2xl': '1rem',
+              full: '9999px',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Smooth scrolling for anchor links */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-white overflow-x-hidden"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col group/design-root"
+    >
+      <!-- Sticky Navigation Bar -->
+      <header
+        class="sticky top-0 z-50 w-full border-b border-solid border-border-dark bg-[#111318]/90 backdrop-blur-md"
+      >
+        <div
+          class="layout-container flex justify-center px-4 sm:px-8 md:px-10 lg:px-40 py-3"
+        >
+          <div class="flex flex-1 items-center justify-between max-w-[960px]">
+            <div
+              class="flex items-center gap-2 text-white cursor-pointer"
+              onclick="window.scrollTo(0,0)"
+            >
+              <div class="flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[28px]"
+                  >terminal</span
+                >
+              </div>
+              <h2
+                class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+              >
+                DevPortfolio
+              </h2>
+            </div>
+            <div class="flex flex-1 justify-end gap-8 items-center">
+              <div class="hidden md:flex items-center gap-8">
+                <a
+                  class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors"
+                  href="#home"
+                  >Home</a
+                >
+                <a
+                  class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors"
+                  href="#skills"
+                  >Skills</a
+                >
+                <a
+                  class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors"
+                  href="#projects"
+                  >Projects</a
+                >
+                <a
+                  class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors"
+                  href="#contact"
+                  >Contact</a
+                >
+              </div>
+              <a
+                class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                href="#contact"
+              >
+                <span class="truncate">Hire Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Main Content -->
+      <main class="layout-container flex flex-col items-center w-full">
+        <!-- Hero Section -->
+        <section
+          class="w-full flex justify-center px-4 sm:px-8 md:px-10 lg:px-40 py-12 md:py-20"
+          id="home"
+        >
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-2xl items-center justify-center p-8 relative overflow-hidden"
+                  data-alt="Abstract dark digital landscape with glowing blue geometric lines"
+                  style="
+                    background-image: linear-gradient(
+                        rgba(17, 19, 24, 0.7) 0%,
+                        rgba(17, 19, 24, 0.9) 100%
+                      ),
+                      url('https://lh3.googleusercontent.com/aida-public/AB6AXuAc3jX0XIDwWpT-XMyX8ghquQbVqhTLDYinaBlr8ywqyHtUZInstaJd5hEadum2MQLQaS_W-Xtfa8-xErUAKd_LeIOmmgIhGtV93-osYtMvBPO4WT2YpifGdFFJQrvao-vavNzOM5jZFAeyVNrOdIPfuJkyk4cUmlfpc9qRGF5yuy0eJluDGN_XW-GIpvvKVfKL4v8zJJRR8ICiaX7cXV0kmtCfSxC1kZ3xjxE8wNvky-R5njmhNNaulQYxaeuZ7gKnvjPTnYiPfJsi');
+                  "
+                >
+                  <div
+                    class="flex flex-col gap-4 text-center max-w-[700px] z-10"
+                  >
+                    <h1
+                      class="text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]"
+                    >
+                      Building Digital Experiences
+                    </h1>
+                    <h2
+                      class="text-gray-300 text-lg font-normal leading-relaxed"
+                    >
+                      Hi, I'm Alex. I build accessible, pixel-perfect web
+                      applications focused on performance and modern user
+                      experiences.
+                    </h2>
+                  </div>
+                  <div class="flex flex-wrap gap-4 justify-center z-10 mt-4">
+                    <a
+                      class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-blue-600 transition-all text-white text-base font-bold shadow-lg shadow-blue-900/20"
+                      href="#projects"
+                    >
+                      View Projects
+                    </a>
+                    <a
+                      class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-surface-dark border border-border-light hover:bg-border-dark transition-all text-white text-base font-bold"
+                      href="#contact"
+                    >
+                      Contact Me
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Skills Section -->
+        <section
+          class="w-full flex justify-center px-4 sm:px-8 md:px-10 lg:px-40 py-8"
+          id="skills"
+        >
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <h2
+              class="text-white text-[28px] font-bold leading-tight tracking-[-0.015em] px-4 pb-6 pt-5"
+            >
+              Technical Expertise
+            </h2>
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+            >
+              <!-- Skill Item 1 -->
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-border-light bg-surface-dark p-6 items-start hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="text-primary bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >code_blocks</span
+                  >
+                </div>
+                <div>
+                  <h3 class="text-white text-lg font-bold">React</h3>
+                  <p class="text-gray-400 text-sm mt-1">
+                    Advanced Hooks &amp; State
+                  </p>
+                </div>
+              </div>
+              <!-- Skill Item 2 -->
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-border-light bg-surface-dark p-6 items-start hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="text-primary bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >javascript</span
+                  >
+                </div>
+                <div>
+                  <h3 class="text-white text-lg font-bold">TypeScript</h3>
+                  <p class="text-gray-400 text-sm mt-1">Strict Typing</p>
+                </div>
+              </div>
+              <!-- Skill Item 3 -->
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-border-light bg-surface-dark p-6 items-start hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="text-primary bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[32px]">dns</span>
+                </div>
+                <div>
+                  <h3 class="text-white text-lg font-bold">Node.js</h3>
+                  <p class="text-gray-400 text-sm mt-1">
+                    REST APIs &amp; Express
+                  </p>
+                </div>
+              </div>
+              <!-- Skill Item 4 -->
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-border-light bg-surface-dark p-6 items-start hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="text-primary bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >style</span
+                  >
+                </div>
+                <div>
+                  <h3 class="text-white text-lg font-bold">Tailwind CSS</h3>
+                  <p class="text-gray-400 text-sm mt-1">Responsive Design</p>
+                </div>
+              </div>
+              <!-- Skill Item 5 -->
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-border-light bg-surface-dark p-6 items-start hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="text-primary bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >database</span
+                  >
+                </div>
+                <div>
+                  <h3 class="text-white text-lg font-bold">PostgreSQL</h3>
+                  <p class="text-gray-400 text-sm mt-1">Data Modeling</p>
+                </div>
+              </div>
+              <!-- Skill Item 6 -->
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-border-light bg-surface-dark p-6 items-start hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="text-primary bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >cloud</span
+                  >
+                </div>
+                <div>
+                  <h3 class="text-white text-lg font-bold">AWS</h3>
+                  <p class="text-gray-400 text-sm mt-1">S3 &amp; Lambda</p>
+                </div>
+              </div>
+              <!-- Skill Item 7 -->
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-border-light bg-surface-dark p-6 items-start hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="text-primary bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >browse_activity</span
+                  >
+                </div>
+                <div>
+                  <h3 class="text-white text-lg font-bold">Next.js</h3>
+                  <p class="text-gray-400 text-sm mt-1">SSR &amp; SEO</p>
+                </div>
+              </div>
+              <!-- Skill Item 8 -->
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-border-light bg-surface-dark p-6 items-start hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="text-primary bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >devices</span
+                  >
+                </div>
+                <div>
+                  <h3 class="text-white text-lg font-bold">UI/UX</h3>
+                  <p class="text-gray-400 text-sm mt-1">
+                    Figma &amp; Prototyping
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Projects Section -->
+        <section
+          class="w-full flex justify-center px-4 sm:px-8 md:px-10 lg:px-40 py-8"
+          id="projects"
+        >
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <h2
+              class="text-white text-[28px] font-bold leading-tight tracking-[-0.015em] px-4 pb-6 pt-5"
+            >
+              Featured Projects
+            </h2>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
+            >
+              <!-- Project Card 1 -->
+              <div
+                class="group flex flex-col rounded-xl overflow-hidden border border-border-light bg-surface-dark hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1"
+              >
+                <div
+                  class="h-48 w-full bg-cover bg-center"
+                  data-alt="E-commerce dashboard interface showing sales charts and product tables"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8SQMbvV5WYNHebboL53SXe-LKgTvXEC9VP0s3zeTq4KidHtDPM5ApEWfPNDTp7QQQZbHV1iwa37CZF9KGLN4jto7x3CMUgEqzw_NpQI1lBAWJk_hdHejW8sLa0wsGfMRxJWIonPgqTgDNdC2TKv-9fNBGXDWSakvBGIPAxGDr6DEAfQP5308VX40LWRbN99EaLjED2Z0GbMJlDtdXDJ8GkEwSSZD40lxzDcDqLwbErKVXn1BQw-CKIt9BKE0D3KutOgCFfUnBNezT');
+                  "
+                ></div>
+                <div class="flex flex-col p-5 gap-3 flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="text-white text-xl font-bold">
+                      E-commerce Dashboard
+                    </h3>
+                    <span
+                      class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors"
+                      >arrow_outward</span
+                    >
+                  </div>
+                  <p class="text-gray-400 text-sm line-clamp-3">
+                    A comprehensive admin dashboard for online retailers.
+                    Features real-time sales tracking, inventory management, and
+                    customizable reporting widgets.
+                  </p>
+                  <div class="flex gap-2 flex-wrap mt-auto pt-2">
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >React</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >Redux</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >Tailwind</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 2 -->
+              <div
+                class="group flex flex-col rounded-xl overflow-hidden border border-border-light bg-surface-dark hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1"
+              >
+                <div
+                  class="h-48 w-full bg-cover bg-center"
+                  data-alt="Dark themed financial graphs and data visualization interface"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMmK86nHn8ubSygs2T5ply7FCmrrwtzZbEWKKIOgRGai9xxj-CSw_Tj0k2U8rWPZmPin4vE7uYwXzStf3p_yhxpQDff_lCN1silagzdXmcrPPGpgRp0TIOvuQNJP714RQOWvBlNRRpSb8ypqIwGpAeX93erO4fP79UfTjOYK5eSBhX2T9TIuCnwDPMQpf4GP5hisnU5QrmSUo83FZH2F2L_CsewpdEdt4SU8qIppFfjiw4f6gT79v9LbdxkAeTf29uTMchKKRSXPyY');
+                  "
+                ></div>
+                <div class="flex flex-col p-5 gap-3 flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="text-white text-xl font-bold">
+                      Finance Tracker
+                    </h3>
+                    <span
+                      class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors"
+                      >arrow_outward</span
+                    >
+                  </div>
+                  <p class="text-gray-400 text-sm line-clamp-3">
+                    Personal finance application with data visualization. Users
+                    can track expenses, set budgets, and view spending habits
+                    through interactive charts.
+                  </p>
+                  <div class="flex gap-2 flex-wrap mt-auto pt-2">
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >Vue.js</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >Firebase</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >D3.js</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 3 -->
+              <div
+                class="group flex flex-col rounded-xl overflow-hidden border border-border-light bg-surface-dark hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1"
+              >
+                <div
+                  class="h-48 w-full bg-cover bg-center"
+                  data-alt="Modern saas landing page design on a laptop screen"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuBqm_200yBnzMbyhj2DKO_IZUZmoCUgtvuiaiI8LTub_MNw2r3zE4cgSjmWToW7_4T2-raK47pxAcairv7d52-4Htkg_QbC6f-deBb7wH_nemHQ2Egp6YPeEKCgGIeEeki3sVpuK0Tqo--J5ANSzeNPhlYHiwmCqHg95Uc53fVRGKdXrlxkU4NCtWYCTjoNtyJmt4tDJnQYtVTK-BfVhDVwahWhTy9WsMs054Y6T3929WXgN1MddwxKHCQMvvgS7WALQD3L2V_1_k');
+                  "
+                ></div>
+                <div class="flex flex-col p-5 gap-3 flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="text-white text-xl font-bold">
+                      SaaS Marketing Site
+                    </h3>
+                    <span
+                      class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors"
+                      >arrow_outward</span
+                    >
+                  </div>
+                  <p class="text-gray-400 text-sm line-clamp-3">
+                    High-performance landing page for a SaaS product. Optimized
+                    for SEO and conversions with fast load times and smooth
+                    animations.
+                  </p>
+                  <div class="flex gap-2 flex-wrap mt-auto pt-2">
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >Next.js</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >Framer Motion</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded text-xs font-medium bg-[#282e39] text-gray-300 border border-border-light"
+                      >Vercel</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Section -->
+        <section
+          class="w-full flex justify-center px-4 sm:px-8 md:px-10 lg:px-40 py-12 mb-12"
+          id="contact"
+        >
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <div
+              class="flex flex-col md:flex-row gap-8 bg-surface-dark border border-border-light rounded-2xl p-6 md:p-10 overflow-hidden"
+            >
+              <!-- Contact Info -->
+              <div class="flex-1 flex flex-col gap-6">
+                <div>
+                  <h2 class="text-white text-3xl font-bold leading-tight mb-2">
+                    Let's work together
+                  </h2>
+                  <p class="text-gray-400 text-base">
+                    Have a project in mind? I'm currently available for
+                    freelance work and open to full-time opportunities.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-4 mt-4">
+                  <div class="flex items-center gap-3 text-gray-300">
+                    <div
+                      class="flex items-center justify-center w-10 h-10 rounded-full bg-[#282e39] text-primary"
+                    >
+                      <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <span>hello@devportfolio.com</span>
+                  </div>
+                  <div class="flex items-center gap-3 text-gray-300">
+                    <div
+                      class="flex items-center justify-center w-10 h-10 rounded-full bg-[#282e39] text-primary"
+                    >
+                      <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <span>San Francisco, CA</span>
+                  </div>
+                </div>
+                <div class="mt-auto">
+                  <h3
+                    class="text-white text-sm font-bold uppercase tracking-wider mb-3 text-opacity-80"
+                  >
+                    Connect
+                  </h3>
+                  <div class="flex gap-3">
+                    <a
+                      class="w-10 h-10 flex items-center justify-center rounded-lg border border-border-light hover:bg-[#282e39] hover:text-white hover:border-primary transition-all text-gray-400"
+                      href="#"
+                    >
+                      <!-- Generic Social Icon (e.g. Github representation) -->
+                      <span class="material-symbols-outlined">code</span>
+                    </a>
+                    <a
+                      class="w-10 h-10 flex items-center justify-center rounded-lg border border-border-light hover:bg-[#282e39] hover:text-white hover:border-primary transition-all text-gray-400"
+                      href="#"
+                    >
+                      <!-- Generic Social Icon (e.g. LinkedIn representation) -->
+                      <span class="material-symbols-outlined">work</span>
+                    </a>
+                    <a
+                      class="w-10 h-10 flex items-center justify-center rounded-lg border border-border-light hover:bg-[#282e39] hover:text-white hover:border-primary transition-all text-gray-400"
+                      href="#"
+                    >
+                      <!-- Generic Social Icon (e.g. Twitter representation) -->
+                      <span class="material-symbols-outlined"
+                        >alternate_email</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Contact Form -->
+              <div
+                class="flex-1 bg-[#111318] p-6 rounded-xl border border-border-light/50"
+              >
+                <form class="flex flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <label class="text-sm font-medium text-gray-300" for="name"
+                      >Name</label
+                    >
+                    <input
+                      class="w-full h-11 rounded-lg bg-surface-dark border border-border-light px-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                      id="name"
+                      placeholder="John Doe"
+                      type="text"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="text-sm font-medium text-gray-300" for="email"
+                      >Email</label
+                    >
+                    <input
+                      class="w-full h-11 rounded-lg bg-surface-dark border border-border-light px-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                      id="email"
+                      placeholder="john@example.com"
+                      type="email"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label
+                      class="text-sm font-medium text-gray-300"
+                      for="message"
+                      >Message</label
+                    >
+                    <textarea
+                      class="w-full rounded-lg bg-surface-dark border border-border-light p-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+                      id="message"
+                      placeholder="Tell me about your project..."
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="mt-2 w-full h-11 bg-primary hover:bg-blue-600 text-white font-bold rounded-lg transition-colors flex items-center justify-center gap-2"
+                    type="button"
+                  >
+                    <span>Send Message</span>
+                    <span class="material-symbols-outlined text-sm">send</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="w-full border-t border-border-dark bg-[#111318] py-8">
+        <div
+          class="layout-container flex justify-center px-4 sm:px-8 md:px-10 lg:px-40"
+        >
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-[960px] flex-1"
+          >
+            <div class="flex items-center gap-2 text-white">
+              <span class="material-symbols-outlined text-primary"
+                >terminal</span
+              >
+              <span class="font-bold">DevPortfolio</span>
+            </div>
+            <p class="text-gray-500 text-sm text-center md:text-right">
+              © 2024 Alex Developer. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

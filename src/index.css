@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+/* Hide scrollbars for marquee sections */
+.rfm-marquee-container {
+  overflow: hidden !important;
+}
+
+.rfm-marquee {
+  overflow: hidden !important;
+}
+
+/* Ensure no horizontal scrollbars */
+body {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
