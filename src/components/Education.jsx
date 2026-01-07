@@ -22,7 +22,7 @@ const Education = () => {
       institution: 'American International University-Bangladesh',
       degree: "Bachelor's degree",
       field: 'Electrical and Electronics Engineering',
-      logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/American_International_University-Bangladesh_logo.png/150px-American_International_University-Bangladesh_logo.png',
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6OAAM6YHvpQEsyB7G7g3PiWpAifUlGYP33Q&s',
     },
   ];
 

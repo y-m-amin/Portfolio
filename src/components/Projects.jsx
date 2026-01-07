@@ -1,5 +1,8 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import krishiImg from '../assets/krishilink.png'
+import passtimeImg from '../assets/passTimeGames.png'
+import styledecorimg from '../assets/styleDecor.png'
 
 const Projects = () => {
   const ref = useRef(null);
@@ -46,7 +49,7 @@ const Projects = () => {
       description:
         'A modern web application that connects farmers, traders, and consumers in one digital space — empowering collaboration and transparency across the agricultural sector.Built with React Router, TailwindCSS, and Firebase Authentication, KrishiLink provides a smooth, secure, and community-driven experience for agricultural networking.',
       image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuC8SQMbvV5WYNHebboL53SXe-LKgTvXEC9VP0s3zeTq4KidHtDPM5ApEWfPNDTp7QQQZbHV1iwa37CZF9KGLN4jto7x3CMUgEqzw_NpQI1lBAWJk_hdHejW8sLa0wsGfMRxJWIonPgqTgDNdC2TKv-9fNBGXDWSakvBGIPAxGDr6DEAfQP5308VX40LWRbN99EaLjED2Z0GbMJlDtdXDJ8GkEwSSZD40lxzDcDqLwbErKVXn1BQw-CKIt9BKE0D3KutOgCFfUnBNezT',
+        krishiImg,
       technologies: ['React', 'Firebase', 'Node.js', 'MongoDB'],
       live_link: 'https://krishilink-e2675.web.app/',
     },
@@ -54,18 +57,16 @@ const Projects = () => {
       title: 'Style Decor',
       description:
         'StyleDecor is a complete appointment and service management platform for a local decoration company offering both in-studio consultations and on-site decoration services for homes, weddings, offices, and events.',
-      image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuCMmK86nHn8ubSygs2T5ply7FCmrrwtzZbEWKKIOgRGai9xxj-CSw_Tj0k2U8rWPZmPin4vE7uYwXzStf3p_yhxpQDff_lCN1silagzdXmcrPPGpgRp0TIOvuQNJP714RQOWvBlNRRpSb8ypqIwGpAeX93erO4fP79UfTjOYK5eSBhX2T9TIuCnwDPMQpf4GP5hisnU5QrmSUo83FZH2F2L_CsewpdEdt4SU8qIppFfjiw4f6gT79v9LbdxkAeTf29uTMchKKRSXPyY',
-      technologies: ['React', 'Firebase', 'Node.js', 'MongoDB'],
+      image:styledecorimg,
+        technologies: ['React', 'Firebase', 'Node.js', 'MongoDB'],
       live_link: 'https://style-decor-ceb45.web.app/',
     },
     {
       title: 'Pass Time Games',
       description:
         'A small collection of fun passtime games built with Phaser.js.This project acts as a simple launcher page linking to multiple mini-games such as Bug Invaders, Pong, Mole Unearther, Bug Dodger, and Cube Matcher.',
-      image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuAuBqm_200yBnzMbyhj2DKO_IZUZmoCUgtvuiaiI8LTub_MNw2r3zE4cgSjmWToW7_4T2-raK47pxAcairv7d52-4Htkg_QbC6f-deBb7wH_nemHQ2Egp6YPeEKCgGIeEeki3sVpuK0Tqo--J5ANSzeNPhlYHiwmCqHg95Uc53fVRGKdXrlxkU4NCtWYCTjoNtyJmt4tDJnQYtVTK-BfVhDVwahWhTy9WsMs054Y6T3929WXgN1MddwxKHCQMvvgS7WALQD3L2V_1_k',
-      technologies: ['Phaser.js', 'Javascript'],
+      image:passtimeImg,
+        technologies: ['Phaser.js', 'Javascript'],
       live_link: 'https://phaser-games-collection.vercel.app/',
     },
   ];

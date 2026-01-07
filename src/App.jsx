@@ -17,7 +17,7 @@ function App() {
       <div className='bg-slate-950 text-white font-display antialiased selection:bg-primary selection:text-white overflow-x-hidden min-h-screen'>
         <div className='relative flex h-auto min-h-screen w-full flex-col group/design-root'>
           <Header />
-          <main className='layout-container flex flex-col items-center w-full'>
+          <main className='layout-container flex flex-col items-center w-full sticky'>
             <Hero />
             <About />
             <Skills />

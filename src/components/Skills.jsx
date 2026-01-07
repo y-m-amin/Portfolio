@@ -85,7 +85,7 @@ const Skills = () => {
       id='skills'
       ref={ref}
     >
-      <div className='layout-content-container flex flex-col max-w-[960px] flex-1 overflow-hidden'>
+      <div className='layout-content-container flex flex-col max-w-[700px] flex-1 overflow-hidden'>
         <motion.h2
           className='text-white text-[28px] font-bold leading-tight tracking-[-0.015em] px-4 pb-8 pt-5 text-center'
           variants={itemVariants}
