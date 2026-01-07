@@ -3,20 +3,20 @@ const Header = () => {
     window.scrollTo(0, 0);
   };
 
-  return (
-    <header className='sticky top-0 z-50 w-full border-b border-slate-800/50 bg-slate-950/90 backdrop-blur-md'>
-      <div className='layout-container flex justify-center px-4 sm:px-8 md:px-10 lg:px-40 py-3'>
-        <div className='flex flex-1 items-center justify-between max-w-[960px]'>
+return (
+    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-slate-800/50 bg-slate-950/90 backdrop-blur-md">
+      <div className="layout-container flex justify-center px-4 sm:px-8 md:px-10 lg:px-40 py-3">
+        <div className="flex flex-1 items-center justify-between max-w-[960px]">
           <div
-            className='flex items-center gap-2 text-white cursor-pointer'
+            className="flex items-center gap-2 text-white cursor-pointer"
             onClick={scrollToTop}
           >
-            <div className='flex items-center justify-center text-primary'>
-              <span className='material-symbols-outlined text-[28px]'>
+            <div className="flex items-center justify-center text-primary">
+              <span className="material-symbols-outlined text-[28px]">
                 terminal
               </span>
             </div>
-            <h2 className='text-white text-lg font-bold leading-tight tracking-[-0.015em]'>
+            <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em]">
               YMA
             </h2>
           </div>

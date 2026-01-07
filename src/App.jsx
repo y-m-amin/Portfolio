@@ -13,11 +13,12 @@ function App() {
   useLenis();
 
   return (
-    <div className='dark'>
-      <div className='bg-slate-950 text-white font-display antialiased selection:bg-primary selection:text-white overflow-x-hidden min-h-screen'>
-        <div className='relative flex h-auto min-h-screen w-full flex-col group/design-root'>
+    <div className="dark">
+      <div className="bg-slate-950 text-white font-display antialiased selection:bg-primary selection:text-white overflow-x-hidden min-h-screen">
+        <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root">
           <Header />
-          <main className='layout-container flex flex-col items-center w-full sticky'>
+          {/* add pt-16 (or tweak if needed) */}
+          <main className="layout-container flex flex-col items-center w-full pt-16">
             <Hero />
             <About />
             <Skills />
@@ -34,3 +35,4 @@ function App() {
 }
 
 export default App;
+
