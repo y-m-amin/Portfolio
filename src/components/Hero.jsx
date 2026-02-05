@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import ParticleBackground from './ParticleBackground';
 
 const Hero = () => {
   const containerVariants = {
@@ -52,20 +53,18 @@ const Hero = () => {
         <div className='@container'>
           <div className='@[480px]:p-4'>
             <motion.div
-              className='flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-2xl items-center justify-center p-8 relative overflow-hidden'
-              style={{
-                backgroundImage: `linear-gradient(
-                  rgba(2, 6, 23, 0.7) 0%,
-                  rgba(2, 6, 23, 0.9) 100%
-                ),
-                url('https://lh3.googleusercontent.com/aida-public/AB6AXuAc3jX0XIDwWpT-XMyX8ghquQbVqhTLDYinaBlr8ywqyHtUZInstaJd5hEadum2MQLQaS_W-Xtfa8-xErUAKd_LeIOmmgIhGtV93-osYtMvBPO4WT2YpifGdFFJQrvao-vavNzOM5jZFAeyVNrOdIPfuJkyk4cUmlfpc9qRGF5yuy0eJluDGN_XW-GIpvvKVfKL4v8zJJRR8ICiaX7cXV0kmtCfSxC1kZ3xjxE8wNvky-R5njmhNNaulQYxaeuZ7gKnvjPTnYiPfJsi')`,
-              }}
+              className='flex min-h-[560px] flex-col gap-6 @[480px]:gap-8 @[480px]:rounded-2xl items-center justify-center p-8 relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 border border-slate-800/30'
               variants={containerVariants}
               initial='hidden'
               animate='visible'
             >
+              {/* Particle Background */}
+              <ParticleBackground />
+
+              {/* Content overlay */}
+              <div className='absolute inset-0 bg-gradient-to-br from-slate-950/80 via-slate-900/60 to-slate-950/80 z-0'></div>
               <motion.div
-                className='flex flex-col gap-4 text-center max-w-[700px] z-10'
+                className='flex flex-col gap-4 text-center max-w-[700px] z-20 relative'
                 variants={itemVariants}
               >
                 <motion.h1
@@ -105,7 +104,7 @@ const Hero = () => {
                 </motion.div>
               </motion.div>
               <motion.div
-                className='flex flex-wrap gap-4 justify-center z-10 mt-4'
+                className='flex flex-wrap gap-4 justify-center z-20 relative mt-4'
                 variants={itemVariants}
               >
                 <motion.a
@@ -130,7 +129,7 @@ const Hero = () => {
 
               {/* Social Links */}
               <motion.div
-                className='flex gap-4 justify-center z-10 mt-2'
+                className='flex gap-4 justify-center z-20 relative mt-2'
                 variants={itemVariants}
               >
                 <motion.a
