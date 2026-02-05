@@ -52,6 +52,10 @@ const Projects = () => {
         krishiImg,
       technologies: ['React', 'Firebase', 'Node.js', 'MongoDB'],
       live_link: 'https://krishilink-e2675.web.app/',
+      github_links: [
+        { name: 'Client', url: 'https://github.com/y-m-amin/krishiLink-client' },
+        { name: 'Server', url: 'https://github.com/y-m-amin/krishiLink-server' }
+      ]
     },
     {
       title: 'Style Decor',
@@ -60,6 +64,10 @@ const Projects = () => {
       image:styledecorimg,
         technologies: ['React', 'Firebase', 'Node.js', 'MongoDB'],
       live_link: 'https://style-decor-ceb45.web.app/',
+      github_links: [
+        { name: 'Client', url: 'https://github.com/y-m-amin/styleDecor-client' },
+        { name: 'Server', url: 'https://github.com/y-m-amin/styleDecor-server' }
+      ]
     },
     {
       title: 'Pass Time Games',
@@ -68,6 +76,9 @@ const Projects = () => {
       image:passtimeImg,
         technologies: ['Phaser.js', 'Javascript'],
       live_link: 'https://phaser-games-collection.vercel.app/',
+      github_links: [
+        { name: 'Repository', url: 'https://github.com/y-m-amin/phaser-games' }
+      ]
     },
   ];
 
@@ -148,11 +159,39 @@ const Projects = () => {
                 </div>
 
                 <div className='mt-3 pt-3 border-t border-slate-800/30'>
-                  <div className='flex items-center gap-2 text-sm text-gray-400 group-hover:text-blue-400 transition-colors duration-300'>
-                    <span className='material-symbols-outlined text-sm'>
-                      launch
-                    </span>
-                    <span>View Live Project</span>
+                  <div className='flex flex-col gap-2'>
+                    {/* Live Project Link */}
+                    <div 
+                      className='flex items-center gap-2 text-sm text-gray-400 group-hover:text-blue-400 transition-colors duration-300 cursor-pointer'
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleProjectClick(project.live_link);
+                      }}
+                    >
+                      <span className='material-symbols-outlined text-sm'>
+                        launch
+                      </span>
+                      <span>View Live Project</span>
+                    </div>
+                    
+                    {/* GitHub Links */}
+                    <div className='flex items-center gap-2 flex-wrap'>
+                      <span className='material-symbols-outlined text-sm text-gray-400'>
+                        code
+                      </span>
+                      {project.github_links.map((github, githubIndex) => (
+                        <a
+                          key={githubIndex}
+                          href={github.url}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='text-xs text-gray-400 hover:text-blue-400 transition-colors duration-300 underline'
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          {github.name}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

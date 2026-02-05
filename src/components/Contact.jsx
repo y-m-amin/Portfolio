@@ -79,7 +79,7 @@ const Contact = () => {
       id='contact'
     >
       <div className='layout-content-container flex flex-col max-w-240 flex-2'>
-        <div className='flex flex-col md:flex-row gap-8 bg-surface-dark border border-border-light rounded-2xl p-6 md:p-10 overflow-hidden'>
+        <div className='flex flex-col md:flex-row gap-8 bg-slate-900/50 border border-slate-800/30 rounded-xl p-6 md:p-10 overflow-hidden shadow-lg shadow-slate-900/20 hover:border-blue-500/30 hover:shadow-blue-500/10 hover:shadow-xl transition-all duration-300'>
           {/* Contact Info */}
           <div className='flex-1 flex flex-col gap-6'>
             <div>
@@ -93,20 +93,20 @@ const Contact = () => {
             </div>
             <div className='flex flex-col gap-4 mt-4'>
               <div className='flex items-center gap-3 text-gray-300'>
-                <div className='flex items-center justify-center w-10 h-10 rounded-full bg-[#282e39] text-primary'>
+                <div className='flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/50 border border-slate-700/30 text-primary'>
                   <span className='material-symbols-outlined'>mail</span>
                 </div>
                 <span>yousuf.amin8818@gmail.com</span>
               </div>
               <div className='flex items-center gap-3 text-gray-300'>
-                <div className='flex items-center justify-center w-10 h-10 rounded-full bg-[#282e39] text-primary'>
+                <div className='flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/50 border border-slate-700/30 text-primary'>
                   <span className='material-symbols-outlined'>location_on</span>
                 </div>
                 <span>Dhaka, Bangladesh</span>
               </div>
               {/* WhatsApp fixed (proper icon) */}
               <div className='flex items-center gap-3 text-gray-300'>
-                <div className='flex items-center justify-center w-10 h-10 rounded-full bg-[#282e39] text-[#25D366]'>
+                <div className='flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/50 border border-slate-700/30 text-[#25D366]'>
                   <FaWhatsapp className='w-5 h-5' />
                 </div>
                 <span>+880 1635 427 218</span>
@@ -119,7 +119,7 @@ const Contact = () => {
               <div className='flex gap-3'>
                 {/* LinkedIn */}
                 <a
-                  className='w-10 h-10 flex items-center justify-center rounded-lg border border-border-light hover:bg-[#282e39] hover:text-white hover:border-primary transition-all text-gray-400'
+                  className='w-10 h-10 flex items-center justify-center rounded-lg border border-slate-700/30 bg-slate-800/50 hover:bg-slate-700/50 hover:text-white hover:border-blue-500/30 transition-all text-gray-400'
                   href='https://www.linkedin.com/in/yousuf-mohammad-amin/'
                   target='_blank'
                   rel='noreferrer'
@@ -128,14 +128,14 @@ const Contact = () => {
                 </a>
                 {/* Mail */}
                 <a
-                  className='w-10 h-10 flex items-center justify-center rounded-lg border border-border-light hover:bg-[#282e39] hover:text-white hover:border-primary transition-all text-gray-400'
+                  className='w-10 h-10 flex items-center justify-center rounded-lg border border-slate-700/30 bg-slate-800/50 hover:bg-slate-700/50 hover:text-white hover:border-blue-500/30 transition-all text-gray-400'
                   href='mailto:yousuf.amin8818@gmail.com'
                 >
                   <FaEnvelope className='w-5 h-5' />
                 </a>
                 {/* GitHub */}
                 <a
-                  className='w-10 h-10 flex items-center justify-center rounded-lg border border-border-light hover:bg-[#282e39] hover:text-white hover:border-primary transition-all text-gray-400'
+                  className='w-10 h-10 flex items-center justify-center rounded-lg border border-slate-700/30 bg-slate-800/50 hover:bg-slate-700/50 hover:text-white hover:border-blue-500/30 transition-all text-gray-400'
                   href='https://github.com/y-m-amin'
                   target='_blank'
                   rel='noreferrer'
@@ -147,7 +147,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form (EmailJS) */}
-          <div className='flex-1 bg-[#111318] p-6 rounded-xl border border-border-light/50'>
+          <div className='flex-1 bg-slate-800/30 border border-slate-700/30 p-6 rounded-xl shadow-lg shadow-slate-900/20'>
             <form
               ref={formRef}
               className='flex flex-col gap-4'
@@ -161,7 +161,7 @@ const Contact = () => {
                   Name
                 </label>
                 <input
-                  className='w-full h-11 rounded-lg bg-surface-dark border border-border-light px-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all'
+                  className='w-full h-11 rounded-lg bg-slate-900/50 border border-slate-700/30 px-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/30 transition-all'
                   id='name'
                   name='name'
                   placeholder='John Doe'
@@ -179,7 +179,7 @@ const Contact = () => {
                   Email
                 </label>
                 <input
-                  className='w-full h-11 rounded-lg bg-surface-dark border border-border-light px-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all'
+                  className='w-full h-11 rounded-lg bg-slate-900/50 border border-slate-700/30 px-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/30 transition-all'
                   id='email'
                   name='email'
                   placeholder='john@example.com'
@@ -197,7 +197,7 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  className='w-full rounded-lg bg-surface-dark border border-border-light p-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none'
+                  className='w-full rounded-lg bg-slate-900/50 border border-slate-700/30 p-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/30 transition-all resize-none'
                   id='message'
                   name='message'
                   placeholder='Tell me about your project...'
@@ -208,7 +208,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <button
-                className='mt-2 w-full h-11 bg-primary hover:bg-blue-600 text-white font-bold rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed'
+                className='mt-2 w-full h-11 bg-primary hover:bg-blue-600 text-white font-bold rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30'
                 type='submit'
                 disabled={loading}
               >

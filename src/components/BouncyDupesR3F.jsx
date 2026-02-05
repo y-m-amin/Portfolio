@@ -576,7 +576,7 @@ export default function BouncyDupesR3F({
 
       <Canvas
         camera={{ fov: 45 }}
-        className="h-full w-full rounded-2xl bg-zinc-800"
+        className="h-full w-full rounded-2xl bg-slate-900/50"
         onPointerDownCapture={(e) => {
           snapshotPose("CANVAS pointerdown capture");
           disableControlsForThisPointerDown(e);

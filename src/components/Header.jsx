@@ -69,8 +69,8 @@ return (
             {/* Download CV button */}
             <a
               className='flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]'
-              href='/cv.pdf'
-              download='Yousuf-Amin-CV.pdf'
+              href='/Resume_Yousuf_Mohammad_Amin.pdf'
+              download='Resume_Yousuf_Mohammad_Amin.pdf'
             >
               <span className='truncate'>Download CV</span>
             </a>

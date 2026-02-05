@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Hero = () => {
   const containerVariants = {
@@ -103,6 +104,35 @@ const Hero = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   Contact Me
+                </motion.a>
+              </motion.div>
+
+              {/* Social Links */}
+              <motion.div
+                className='flex gap-4 justify-center z-10 mt-2'
+                variants={itemVariants}
+              >
+                <motion.a
+                  className='w-12 h-12 flex items-center justify-center rounded-lg border border-slate-700/50 bg-slate-800/50 hover:bg-slate-700/50 hover:border-blue-500/30 transition-all text-gray-400 hover:text-white'
+                  href='https://github.com/y-m-amin'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  variants={buttonVariants}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <FaGithub className='w-5 h-5' />
+                </motion.a>
+                <motion.a
+                  className='w-12 h-12 flex items-center justify-center rounded-lg border border-slate-700/50 bg-slate-800/50 hover:bg-slate-700/50 hover:border-blue-500/30 transition-all text-gray-400 hover:text-white'
+                  href='https://www.linkedin.com/in/yousuf-mohammad-amin/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  variants={buttonVariants}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <FaLinkedinIn className='w-5 h-5' />
                 </motion.a>
               </motion.div>
             </motion.div>
