@@ -10,7 +10,7 @@ const Footer = () => {
             <span className='font-bold'>DevPortfolio</span>
           </div>
           <p className='text-gray-500 text-sm text-center md:text-right'>
-            © 2024 Alex Developer. All rights reserved.
+            © 2025 Yousuf Mohammad Amin. All rights reserved.
           </p>
         </div>
       </div>

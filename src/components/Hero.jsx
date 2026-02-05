@@ -72,16 +72,37 @@ const Hero = () => {
                   className='text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]'
                   variants={itemVariants}
                 >
-                  Building Digital Experiences
+                  Hi, I'm{' '}
+                  <span className='text-blue-400'>Yousuf Mohammad Amin</span>
                 </motion.h1>
-                <motion.h2
-                  className='text-gray-300 text-lg font-normal leading-relaxed'
+                <motion.div
+                  className='text-gray-300 text-lg md:text-xl font-medium leading-relaxed'
                   variants={itemVariants}
                 >
-                  Hi, I'm Yousuf. I build accessible, pixel-perfect web
-                  applications focused on performance and modern user
-                  experiences.
-                </motion.h2>
+                  <div className='mb-2'>
+                    <span className='text-blue-400 font-semibold'>
+                      MERN Stack Developer
+                    </span>
+                  </div>
+                  <div className='text-base md:text-lg text-gray-400 mb-3'>
+                    (<span className='text-blue-300'>React</span> •{' '}
+                    <span className='text-green-400'>Node</span> •{' '}
+                    <span className='text-emerald-400'>MongoDB</span>) building
+                    production-style webapps
+                  </div>
+                  <div className='text-base text-gray-300'>
+                    I ship{' '}
+                    <span className='text-blue-300 font-medium'>clean UI</span>,{' '}
+                    <span className='text-green-400 font-medium'>
+                      secure auth
+                    </span>
+                    , and{' '}
+                    <span className='text-purple-400 font-medium'>
+                      well-documented APIs
+                    </span>
+                    .
+                  </div>
+                </motion.div>
               </motion.div>
               <motion.div
                 className='flex flex-wrap gap-4 justify-center z-10 mt-4'
@@ -121,7 +142,7 @@ const Hero = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <FaGithub className='w-5 h-5' />
+                  <FaGithub />
                 </motion.a>
                 <motion.a
                   className='w-12 h-12 flex items-center justify-center rounded-lg border border-slate-700/50 bg-slate-800/50 hover:bg-slate-700/50 hover:border-blue-500/30 transition-all text-gray-400 hover:text-white'
@@ -132,7 +153,7 @@ const Hero = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <FaLinkedinIn className='w-5 h-5' />
+                  <FaLinkedinIn />
                 </motion.a>
               </motion.div>
             </motion.div>
